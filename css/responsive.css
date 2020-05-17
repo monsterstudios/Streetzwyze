@@ -1,0 +1,47 @@
+@media (max-width: 767.98px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: 86px;
+        bottom: 0;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        background-color: rgba(185, 47, 45, 0.9);
+        transition: -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    .offcanvas-collapse.open {
+        -webkit-transform: translateX(-1.6rem);
+        transform: translateX(-1.6rem);
+    }
+
+    .offcanvas-collapse.open .navbar-nav {
+        margin-top: 30px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link {
+        opacity: .5;
+        color: #fff;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 15%;
+    }
+
+    .login_content h2,
+    .login_content h3,
+    .login_content form {
+        max-width: 100%;
+    }
+}
