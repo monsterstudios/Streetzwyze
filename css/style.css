@@ -161,6 +161,7 @@ section h2 {
     border-radius: 10px;
     border: 2px solid #e0e0e1;
     margin-bottom: 10px;
+    min-height: 186px;
 }
 
 #secure .card img {
