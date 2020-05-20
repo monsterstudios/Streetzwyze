@@ -16,8 +16,8 @@
     }
 
     .offcanvas-collapse.open {
-        -webkit-transform: translateX(-1.6rem);
-        transform: translateX(-1.6rem);
+        -webkit-transform: translateX(-1rem);
+        transform: translateX(-1rem);
     }
 
     .offcanvas-collapse.open .navbar-nav {
@@ -43,5 +43,11 @@
     .login_content h3,
     .login_content form {
         max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-content {
+        padding: 4em 0;
     }
 }
