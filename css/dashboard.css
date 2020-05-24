@@ -1,0 +1,12 @@
+body{
+	background: #E9ECEF;
+}
+
+.navbar-dark.bg-danger{
+	background: #B73132!important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	font-size: 18px;
+	padding: 14px 8px;
+}

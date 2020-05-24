@@ -34,7 +34,7 @@ $(function() {
 
     var sslider = $('#signup-slider');
     $(sslider).owlCarousel({
-        items: 1,
+        items: 2,
         loop: true,
         dots: false,
         responsive: {
@@ -45,7 +45,7 @@ $(function() {
                 items: 1
             },
             1000: {
-                items: 1
+                items: 2
             }
         }
     });
@@ -97,8 +97,8 @@ $(function() {
 
     $(".btn-previous").click(function() {
 
-        current_fs = $(this).parent('fieldset');
-        previous_fs = $(this).parent('fieldset').prev();
+        current_fs = $(this).parent();
+        previous_fs = $(this).parent().prev();
 
         //Remove class active
         $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
@@ -129,5 +129,5 @@ $(function() {
 
     $(".reservation-submit").click(function() {
         return false;
-    })
+    });
 });
